@@ -1,15 +1,9 @@
 # Open Jackson Queueing Network in a Hospital
 
-A from-scratch reproduction of a group presentation for *Riset Operasi B* (Operations Research B),
+A reproduction of a group presentation for *Riset Operasi B* (Operations Research B),
 Department of Mathematics, Universitas Gadjah Mada. The presentation reviews the paper
 *On the Application of the Open Jackson Queuing Network in Hospital* by Arum Helmi Manggala Putri and
 Irwan Endrayanto, then builds a simplified three-station model of its own.
-
-Only the slides survived, and they contain no calculations: the conclusion slide is empty. This
-repository recomputes every number with code, checks the model three independent ways, and corrects
-the slides. The corrected deck is [slides/main.pdf](slides/main.pdf) (in Indonesian); the deck as
-submitted is in [original/](original/), with only the members' student ID numbers removed from its
-cover.
 
 ## Findings
 
