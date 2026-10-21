@@ -1,0 +1,69 @@
+\ProvidesPackage{mhasbiarz}
+
+%Ini templete
+\usetheme[progressbar=frametitle]{metropolis}
+\setbeamertemplate{frame numbering}[fraction]
+\useoutertheme{metropolis}
+\useinnertheme{metropolis}
+\usefonttheme{metropolis}
+\usefonttheme[onlymath]{serif}
+\setbeamercolor{background canvas}{bg=white}
+\definecolor{mygreen}{RGB}{0, 102, 204}
+\setbeamercolor{frametitle}{bg=mygreen}
+\usecolortheme[named=mygreen]{structure}
+\setbeamertemplate{theorems}[numbered]
+\setbeamercolor{normal text}{fg=black!90}
+
+
+
+
+%Ini Package
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amscd}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage[indonesian]{babel}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage{mathtools}  
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{relsize}
+\usepackage{ragged2e}
+\usepackage{transparent}
+\usepackage{tabto}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+
+%newcommand
+\apptocmd{\frame}{}{\justifying}{}
+\setbeamercolor{progress bar}{fg=mygreen,bg=mygreen}
+
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+	\oldmacro\hfill%
+	\insertframenumber\,/\,\inserttotalframenumber}
+
+
+%Ini penempatan logo setiap halaman
+\metroset{block=fill}
+	\addtobeamertemplate{frametitle}{}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\filldraw[color=mygreen!100, fill=mygreen!85](14.3,0.56) rectangle (13.2,1.65);
+		\node at (13.75,1.07) {\includegraphics[width=0.8 cm]{logo2.png}};
+	\end{tikzpicture}	\vspace*{-0.5cm}}
+
