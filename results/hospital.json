@@ -1,0 +1,165 @@
+{
+  "symbolic": {
+    "arrival_rates": [
+      "lambda_1",
+      "13*lambda_1/15",
+      "2*lambda_1/3"
+    ],
+    "utilisation": [
+      "lambda_1/mu_1",
+      "13*lambda_1/(15*mu_2)",
+      "2*lambda_1/(3*mu_3)"
+    ],
+    "cases": [
+      {
+        "case": "(0, 0, 0)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      },
+      {
+        "case": "(n_1, 0, 0)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      },
+      {
+        "case": "(0, n_2, 0)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      },
+      {
+        "case": "(0, 0, n_3)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      },
+      {
+        "case": "(n_1, n_2, n_3)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": true,
+        "product_form_satisfies_original_equation": true
+      },
+      {
+        "case": "(n_1, n_2, 0)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      },
+      {
+        "case": "(0, n_2, n_3)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      },
+      {
+        "case": "(n_1, 0, n_3)",
+        "product_form_satisfies_derived_equation": true,
+        "original_equation_matches": false,
+        "product_form_satisfies_original_equation": false
+      }
+    ]
+  },
+  "example": {
+    "rates": {
+      "lambda_1": 1.0167,
+      "mu_1": 1.3056,
+      "mu_2": 1.2,
+      "mu_3": 1.5833
+    },
+    "arrival_rates": [
+      1.0167,
+      0.8811399999999999,
+      0.6778
+    ],
+    "utilisation": [
+      0.7787224264705881,
+      0.7342833333333333,
+      0.42809322301522135
+    ],
+    "mean_number": [
+      3.5192107995846285,
+      2.763407137928871,
+      0.7485367200441744
+    ],
+    "time_per_visit": [
+      3.461405330564207,
+      3.136172614940726,
+      1.1043622308117063
+    ],
+    "mean_number_in_system": 7.031154657557674,
+    "mean_time_in_system": 6.915663084053973,
+    "sum_of_time_per_visit": 7.70194017631664,
+    "ctmc": [
+      {
+        "cap": 10,
+        "states": 1331,
+        "mean_number": [
+          2.8034476094559886,
+          2.315004038105038,
+          0.751602597222054
+        ],
+        "max_rel_error_small_states": 0.19675805879945285
+      },
+      {
+        "cap": 20,
+        "states": 9261,
+        "mean_number": [
+          3.4122988588527474,
+          2.7179455629147804,
+          0.7482425079652125
+        ],
+        "max_rel_error_small_states": 0.011445454655186316
+      },
+      {
+        "cap": 30,
+        "states": 29791,
+        "mean_number": [
+          3.5061066356135746,
+          2.759470937673378,
+          0.7484451239476161
+        ],
+        "max_rel_error_small_states": 0.0007305377950062031
+      },
+      {
+        "cap": 40,
+        "states": 68921,
+        "mean_number": [
+          3.5177775878955475,
+          2.763080575634561,
+          0.7485253852058923
+        ],
+        "max_rel_error_small_states": 5.0177102697723797e-05
+      },
+      {
+        "cap": 50,
+        "states": 132651,
+        "mean_number": [
+          3.5190640331651317,
+          2.7633801577569956,
+          0.7485356020981835
+        ],
+        "max_rel_error_small_states": 3.7144729372329266e-06
+      }
+    ],
+    "simulation": {
+      "replications": 5,
+      "horizon_minutes": 200000,
+      "warmup_fraction": 0.1,
+      "mean_number": [
+        3.5137597518046784,
+        2.78012937604095,
+        0.7480180334036353
+      ],
+      "mean_number_se": [
+        0.03519412743047074,
+        0.014492895863699793,
+        0.002547074771557895
+      ],
+      "mean_time_in_system": 6.92830128101276,
+      "mean_time_in_system_se": 0.045215327731135554,
+      "patients": 914724
+    }
+  }
+}
